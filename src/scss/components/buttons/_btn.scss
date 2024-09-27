@@ -1,0 +1,50 @@
+.btn {
+  padding: resp(14) resp(40);
+  display: inline-block;
+  text-align: center;
+  font-size: resp(24);
+  font-weight: 600;
+  border-radius: resp(50);
+  border: none;
+  outline: none;
+  color: #fff;
+  background: $primary;
+  transition: background-color .3s ease, box-shadow .3s ease, transform .3s ease;
+  @include _767 {
+    padding: resp(10, 360) resp(15, 360);
+    padding: resp(10, 360) resp(16, 360);
+    border-radius: resp(50, 360);
+    font-size: resp(20, 360);
+  }
+  &.to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 5;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    background: url('../img/caretDown.svg') no-repeat center / auto, linear-gradient(132deg, rgba(2, 5, 40, 0.38) -48.79%, #F85E61 57.89%), #EE1A24;
+    transition: opacity .3s ease, visibility .3s ease;
+    @include _767 {
+      bottom: 30px;
+    }
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  @include interactive {
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 3px 7px 8px 0px #537BD5;
+    }
+  }
+
+}
+
+

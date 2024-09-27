@@ -1,0 +1,10 @@
+.section-seo-about {
+  p {
+    font-size: resp-size(40);
+    line-height: 1.3em;
+    text-align: center;
+    @include _767 {
+      font-size: resp-size(20, 360);
+    }
+  }
+}

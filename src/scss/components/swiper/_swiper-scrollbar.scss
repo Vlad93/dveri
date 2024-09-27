@@ -1,0 +1,23 @@
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar-horizontal {
+  position: relative;
+  margin-top: 16px;
+  height: 7px;
+  border-radius: 10px;
+  bottom: 1px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .25);
+}
+.swiper-scrollbar {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .25);
+}
+.swiper-scrollbar-drag {
+  background-color: #000;
+}
+.swiper-vertical>.swiper-scrollbar {
+  right: 1px;
+}
+.swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical>.swiper-scrollbar {
+  width: 7px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .25);
+}
