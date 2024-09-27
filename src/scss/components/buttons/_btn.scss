@@ -16,6 +16,25 @@
     border-radius: resp(50, 360);
     font-size: resp(20, 360);
   }
+  &.animated {
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.245833333vw;
+      height: 300%;
+      transition: .3s;
+      background-color: rgba(255, 255, 255, .5);
+      animation: blick 3s linear infinite;
+      transform: rotate(40deg) translateY(-50%);
+      @include _767 {
+        width: 3.545833333vw;
+      }
+    }
+  }
   &.to-top {
     position: fixed;
     bottom: 20px;

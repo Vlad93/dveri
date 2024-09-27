@@ -999,69 +999,17 @@ $(document).ready(function () {
         },
       });
   });
-  $('[newProductsSlider_js]').each(function () {
-    var swiperEL = $(this)[0];
-    function init(swiperEl=swiperEL) {
-      var swiper = new Swiper(swiperEl, {
-        direction: 'horizontal',
-        slidesPerView: 1,
-        spaceBetween: 10,
-        speed: 700,
-        scrollbar: {
-          el: ".new-swiper__scrollbar",
-          draggable: true,
-          hide: false,
-        },
-        navigation: {
-          nextEl: '.section-new-products__swiper-navigation .swiper__navigation-btn-next',
-          prevEl: '.section-new-products__swiper-navigation .swiper__navigation-btn-prev',
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            navigation: {
-              enabled: false,
-            },
-            scrollbar: {
-              enabled: true,
-            },
-          },
-          767: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            scrollbar: {
-              enabled: false,
-            },
-            navigation: {
-              enabled: true,
-            },
-          },
-          992: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            scrollbar: {
-              enabled: false,
-            },
-            navigation: {
-              enabled: true,
-            },
-          },
-        },
-      });
-    }
-    setTimeout(init, 10);
-  });
   $('[productsSlider_js]').each(function () {
     const navigationPrev = $(this).parents('.section-products-swiper').find('.swiper__navigation-btn-prev')[0];
-    const navigationNext = $(this).parents('.section-products-swiper').find('.swiper__navigation-btn-prev')[0];
+    const navigationNext = $(this).parents('.section-products-swiper').find('.swiper__navigation-btn-next')[0];
     var swiper = new Swiper($(this)[0], {
       direction: 'horizontal',
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 10,
       speed: 700,
       scrollbar: {
-        el: ".new-swiper__scrollbar",
+        enabled: true,
+        el: ".swiper-scrollbar",
         draggable: true,
         hide: false,
       },
@@ -1071,40 +1019,27 @@ $(document).ready(function () {
       },
       breakpoints: {
         0: {
-          slidesPerView: 1,
+          slidesPerView: 2,
           spaceBetween: 10,
-          navigation: {
-            enabled: false,
-          },
           scrollbar: {
             enabled: true,
           },
         },
         767: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-          scrollbar: {
-            enabled: false,
-          },
-          navigation: {
-            enabled: true,
-          },
-        },
-        992: {
           slidesPerView: 4,
           spaceBetween: 20,
           scrollbar: {
             enabled: false,
           },
-          navigation: {
-            enabled: true,
+        },
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+          scrollbar: {
+            enabled: false,
           },
         },
-      },
-
-      observer: true,
-      observeParents: true,
-      observeSlideChildren: true,
+      }
     });
   });
   $('[lastSizeSlider_js]').each(function () {

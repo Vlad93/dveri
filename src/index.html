@@ -226,7 +226,7 @@
                   Пн-пт с 9:00 до 21:00<br> Пт-Вс с 10:00 до 18:00<br>Приём заказов и заявок круглосуточно на почту и месенджеры
                 </p>
               </div>
-              <button class="header__btn header__btn_mob btn" popupOpen="zamer">
+              <button class="header__btn header__btn_mob btn animated" popupOpen="zamer">
                 Бесплатный замер
               </button>
             </div>
@@ -252,7 +252,7 @@
             <img class="phone-link__icon" src="img/phone-icon.svg" alt="">
             <span class="phone-link__text">+375 (44) 770-93-53</span>
           </a>
-          <button class="header__btn btn" popupOpen="zamer">
+          <button class="header__btn btn animated" popupOpen="zamer">
             Бесплатный замер
           </button>
         </div>
@@ -425,7 +425,7 @@
               <div class="products-swiper__slide swiper-slide">
                 <article class="section-products-swiper__product-card product-card">
                   <div class="product-card__img-wrap">
-                    <button href="" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
                       <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -433,50 +433,343 @@
                     </button>
                     <img src="img/product-1.webp" alt="" class="product-card__img">
                   </div>
-                  <div class="product-card__fon-wrap">
-                    <button class="wishlist__btn">
-                      <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                     </button>
-                    <div class="product-card__content-wrap">
-                      <h3 class="product-card__title">
-                        6085 БЕЖЕВЫЙ
-                      </h3>
-                      <ul class="product-card__color-list">
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="" data-product="1">
-                            <img src="img/color1.webp" alt="" class="product-card__color-img">
-                          </button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="" data-product="2">
-                            <img src="img/color2.webp" alt="" class="product-card__color-img">
-                          </button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="" data-product="3">
-                            <img src="img/color3.webp" alt="" class="product-card__color-img">
-                          </button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="" data-product="4">
-                            <img src="img/color4.webp" alt="" class="product-card__color-img">
-                          </button>
-                        </li>
-                      </ul>
-                      <div class="product-card__price-wrap">
-                        <div class="product-card__price-old">
-                          420.00 BYN
-                        </div>
-                        <div class="product-card__price">
-                          340.00 BYN
-                        </div>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
                       </div>
-                      <a href="" class="product-card__btn btn">
-                        Подробнее
-                      </a>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
                     </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
                   </div>
                   <div class="preloader product-preloader">
                     <div class="preloader-icon product-preloader-icon"></div>
@@ -1703,7 +1996,7 @@
             <img class="phone-link__icon" src="img/phone-icon.svg" alt="">
             <span class="phone-link__text">+375 (44) 770-93-53</span>
           </a>
-          <button class="footer__btn btn" popupOpen="zamer">
+          <button class="footer__btn btn animated" popupOpen="zamer">
             Бесплатный замер
           </button>
           <div class="footer__created">
