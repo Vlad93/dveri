@@ -1,5 +1,5 @@
 .section-products-swiper {
-  padding-bottom: resp(50);
+  padding-bottom: resp(100);
   @include _767 {
     padding-bottom: resp(50, 360);
   }

@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  height: 100%;
   transition: transform .3s ease;
   @include interactive {
     &:hover {
@@ -125,6 +126,7 @@
     align-items: flex-start;
     z-index: 1;
     width: 100%;
+    height: 100%;
     padding: resp(10);
     background-color: #fff;
     @include _767 {
@@ -207,6 +209,7 @@
     }
   }
   &__btn {
+    margin-top: auto;
     max-width: 90%;
     width: 100%;
     align-self: center;
