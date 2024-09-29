@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/odometer.min.css">
+  <link rel="stylesheet" href="css/intl-tel-input/css/intlTelInput.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
@@ -783,7 +784,7 @@
       </div>
     </section>
     <section class="section section-catalog-links">
-      <div class="container">
+      <div class="container container-full">
         <div class="section-catalog-links__title section-title">
           Каталог
         </div>
@@ -875,1114 +876,556 @@
         </ul>
       </div>
     </section>
-    <!-- <section class="section-banners section section-top">
-      <div class="section-banners__container container container-full">
-        <h1 class="title" style="display: none;">Beatiful and free</h1>
-        <div class="section-banners__swiper banners-swiper swiper" bannerSlider_JS>
-          <div class="swiper-wrapper banners-swiper__wrapper">
-            <div class="swiper-slide banners-swiper__slide">
-              <div class="banners-swiper__content">
-                <div class="banners-swiper__text-img-wrap">
-                  <img src="img/banner-text.webp" alt="" class="banners-swiper__text-img">
+    <section class="section-doors section">
+      <div class="container container-full">
+        <div class="section-doors__wrap">
+          <div class="section-doors__content">
+            <div class="section-doors__title-wrap">
+              <div class="section-doors__title">
+                Подберите дверь для своего интерьера
+              </div>
+              <a href="catalog" class="section-doors__link btn animated">
+                Выбрать
+              </a>
+            </div>
+            <div class="section-doors__swipers">
+              <div class="section-doors__swiper swiper section-doors__swiper_1">
+                <div class="swiper-wrapper section-doors__swiper-wrapper">
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-1-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-1-2.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                   <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-1-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
                 </div>
-                <h2 class="banners-swiper__title title">
-                  Открой новые грани своего стиля
-                </h2>
               </div>
-              <div class="banners-swiper__img-wrap">
-                <img src="img/girl-banner.webp" alt="" class="banners-swiper__img">
+              <div class="section-doors__swiper swiper section-doors__swiper_2">
+                <div class="swiper-wrapper section-doors__swiper-wrapper">
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-2-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-2-2.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-2-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="section-doors__swiper swiper section-doors__swiper_3">
+                <div class="swiper-wrapper section-doors__swiper-wrapper">
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-3-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-3-2.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-3-3.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="section-doors__swiper swiper section-doors__swiper_4">
+                <div class="swiper-wrapper section-doors__swiper-wrapper">
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-4-1.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-4-2.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                  <div class="section-doors__swiper-slide swiper-slide">
+                    <a href="" class="section-doors__swiper-slide-link">
+                      <img src="img/door-slider-4-2.webp" alt="" class="section-doors__swiper-slide-img">
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="section-doors__form-wrap">
+            <div class="section-doors__form-title">
+              ОФОРМИТЕ ЗАЯВКУ НА БЕСПЛАТНЫЙ ВЫЕЗД ИНЖЕНЕРА ЗАМЕРЩИКА
+            </div>
+            <form action="#" method="post" class="section-doors__form form" formValidate_JS>
+              <input type="hidden" name="action" value="request">
+              <input type="hidden" name="form" value="Бесплатный выезд замерщика">
+              <div class="section-doors__form-container form-container">
+                <div class="input-wrap required">
+                  <label for="name" class="form-label">
+                    <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
+                  </label>
+                </div>
+                <div class="input-wrap required">
+                  <label for="phone" class="form-label">
+                    <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Номер телефона">
+                  </label>
+                </div>
+                <button class="section-doors__form-btn form-btn animated btn" agreementControlBtn_JS>
+                  <span>Вызвать замерщика</span>
+                </button>
+              </div>
+              <div class="section-doors__form-checkbox form-checkbox">
+                <div agreementControl_JS class="checked">
+                    <label for="agreement"></label>
+                    <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+                </div>
+                <p>
+                  Нажимая на кнопку «Вызвать замерщика» вы принимаете условия <a href="" class="agreement-link" target="_blank">Публичной оферты</a>.
+                </p>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-new-products section" id="#next-section">
-      <div class="container">
-        <div class="section-new-products__title-wrap title-wrap">
-          <h2 class="section-new-products__title title center section-title">
-            Новинки
+    <section class="section section-products-swiper section-popular">
+      <div class="section-products-swiper__title-wrap">
+        <div class="section-products-swiper__title">
+          <img src="img/title-bg.webp" alt="" class="section-products-swiper__title-bg">
+          <h2 class="section-products-swiper__title-text">
+            ПОПУЛЯРНОЕ
           </h2>
-          <div class="swiper__navigation section-new-products__swiper-navigation">
-            <button class="swiper__navigation-btn-prev swiper__navigation-btn">
-              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-            <button class="swiper__navigation-btn-next swiper__navigation-btn">
-              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-          </div>
         </div>
-        <div class="section-new-products__swiper-wrap">
-          <div class="section-new-products__swiper new-swiper swiper" newProductsSlider_js>
-            <div class="section-new-products__swiper-wrapper new-swiper__wrapper swiper-wrapper">
-              <div class="new-swiper__slide swiper-slide">
-                <article class="product-card">
-                  <div class="product-card__img-wrap">
-                    <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                      <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                    </button>
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                  <div class="product-card__content-wrap">
-                    <h3 class="product-card__title">
-                      6085 БЕЖЕВЫЙ
-                    </h3>
-                    <ul class="product-card__color-list">
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                      </li>
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                      </li>
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                      </li>
-                    </ul>
-                    <ul class="product-card__sizes">
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          46
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          48
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          50
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          52
-                        </span>
-                      </li>
-                    </ul>
-                    <button class="product-card__btn btn" popupOpen="product-1">
-                      Подробнее
-                    </button>
-                  </div>
-                </article>
-              </div>
-              <div class="new-swiper__slide swiper-slide">
-                <article class="product-card">
-                  <div class="product-card__img-wrap">
-                    <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                      <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                    </button>
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                  <div class="product-card__content-wrap">
-                    <h3 class="product-card__title">
-                      6085 БЕЖЕВЫЙ
-                    </h3>
-                    <ul class="product-card__color-list">
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                      </li>
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                      </li>
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                      </li>
-                    </ul>
-                    <ul class="product-card__sizes">
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          46
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          48
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          50
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          52
-                        </span>
-                      </li>
-                    </ul>
-                    <button class="product-card__btn btn" popupOpen="product-1">
-                      Подробнее
-                    </button>
-                  </div>
-                </article>
-              </div>
-              <div class="new-swiper__slide swiper-slide">
-                <article class="product-card">
-                  <div class="product-card__img-wrap">
-                    <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                      <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                    </button>
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                  <div class="product-card__content-wrap">
-                    <h3 class="product-card__title">
-                      6085 БЕЖЕВЫЙ
-                    </h3>
-                    <ul class="product-card__color-list">
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                      </li>
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                      </li>
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                      </li>
-                    </ul>
-                    <ul class="product-card__sizes">
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          46
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          48
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          50
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          52
-                        </span>
-                      </li>
-                    </ul>
-                    <button class="product-card__btn btn" popupOpen="product-1">
-                      Подробнее
-                    </button>
-                  </div>
-                </article>
-              </div>
-              <div class="new-swiper__slide swiper-slide">
-                <article class="product-card">
-                  <div class="product-card__img-wrap">
-                    <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                      <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                    </button>
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                  <div class="product-card__content-wrap">
-                    <h3 class="product-card__title">
-                      6085 БЕЖЕВЫЙ
-                    </h3>
-                    <ul class="product-card__color-list">
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                      </li>
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                      </li>
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                      </li>
-                    </ul>
-                    <ul class="product-card__sizes">
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          46
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          48
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          50
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          52
-                        </span>
-                      </li>
-                    </ul>
-                    <button class="product-card__btn btn" popupOpen="product-1">
-                      Подробнее
-                    </button>
-                  </div>
-                </article>
-              </div>
-              <div class="new-swiper__slide swiper-slide">
-                <article class="product-card">
-                  <div class="product-card__img-wrap">
-                    <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                      <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                    </button>
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                  <div class="product-card__content-wrap">
-                    <h3 class="product-card__title">
-                      6085 БЕЖЕВЫЙ
-                    </h3>
-                    <ul class="product-card__color-list">
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                      </li>
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                      </li>
-                      <li class="product-card__color-item">
-                        <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                      </li>
-                    </ul>
-                    <ul class="product-card__sizes">
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          46
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          48
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          50
-                        </span>
-                      </li>
-                      <li class="product-card__sizes-item">
-                        <span class="product-card__size">
-                          52
-                        </span>
-                      </li>
-                    </ul>
-                    <button class="product-card__btn btn" popupOpen="product-1">
-                      Подробнее
-                    </button>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="new-swiper__scrollbar"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="new-collection section">
-      <div class="container new-collection__container">
-        <h2 class="new-collection__title section-title title">
-          Коллекции
-        </h2>
-      </div>
-      <div class="container container-full">
-        <div class="new-collection__grid">
-          <div class="new-collection__item new-collection-card new-collection-card_24">
-            <div class="new-collection-card__img-wrap">
-              <img src="img/2024.webp" alt="" class="new-collection-card__img">
-            </div>
-            <div class="new-collection-card__wrap">
-              <span class="new-collection-card__date">
-                2024
-              </span>
-              <a href="#catalog" class="new-collection-card__btn btn">
-                Перейти в коллекцию
-              </a>
-            </div>
-          </div>
-          <div class="new-collection__item new-collection-card new-collection-card_23">
-            <div class="new-collection-card__img-wrap">
-              <img src="img/2023.webp" alt="" class="new-collection-card__img">
-            </div>
-            <div class="new-collection-card__wrap">
-              <span class="new-collection-card__date">
-                2023
-              </span>
-              <a href="#catalog" class="new-collection-card__btn btn">
-                Перейти в коллекцию
-              </a>
-            </div>
-          </div>
-          <div class="new-collection__item new-collection-card new-collection-card_21">
-            <div class="new-collection-card__img-wrap">
-              <img src="img/2021.webp" alt="" class="new-collection-card__img">
-            </div>
-            <div class="new-collection-card__wrap">
-              <span class="new-collection-card__date">
-                2021
-              </span>
-              <a href="#catalog" class="new-collection-card__btn btn">
-                Перейти в коллекцию
-              </a>
-            </div>
-          </div>
-          <div class="new-collection__item new-collection-card new-collection-card_22">
-            <div class="new-collection-card__img-wrap">
-              <img src="img/2022.webp" alt="" class="new-collection-card__img">
-            </div>
-            <div class="new-collection-card__wrap">
-              <span class="new-collection-card__date">
-                2022
-              </span>
-              <a href="#catalog" class="new-collection-card__btn btn">
-                Перейти в коллекцию
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="open-more-section section">
-      <div class="container container-full">
-        <div class="open-more-section__wrap">
-          <div class="open-more-section__img-wrap">
-            <img src="img/open-left.webp" alt="" class="open-more-section__img">
-          </div>
-          <div class="open-more-section__content">
-            <div class="open-more-section__title">
-              Открой для&nbsp;себя&nbsp;больше!
-            </div>
-            <a href="#catalog" class="open-more-section__btn btn btn-reverse">
-              Каталог
+        <div class="section-products-swiper__navigation-wrap">
+          <div class="container section-products-swiper__navigation-container">
+            <a href="" class="section-products-swiper__catalog-link">
+              Смотреть все
             </a>
+            <div class="swiper__navigation section-products-swiper__swiper-navigation">
+              <button class="swiper__navigation-btn-prev swiper__navigation-btn">
+                <svg class="swiper__navigation-btn-icon"  viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.585846 16.4142C-0.195202 15.6332 -0.195202 14.3668 0.585846 13.5858L13.3138 0.857864C14.0948 0.0768156 15.3611 0.0768156 16.1422 0.857864C16.9232 1.63891 16.9232 2.90524 16.1422 3.68629L4.82849 15L16.1422 26.3137C16.9232 27.0948 16.9232 28.3611 16.1422 29.1421C15.3611 29.9232 14.0948 29.9232 13.3138 29.1421L0.585846 16.4142ZM33.01 17H2.00006V13H33.01V17Z" fill="white"/>
+                </svg>
+              </button>
+              <button class="swiper__navigation-btn-next swiper__navigation-btn">
+                <svg class="swiper__navigation-btn-icon" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M32.4242 16.4142C33.2052 15.6332 33.2052 14.3668 32.4242 13.5858L19.6962 0.857864C18.9152 0.0768156 17.6489 0.0768156 16.8678 0.857864C16.0868 1.63891 16.0868 2.90524 16.8678 3.68629L28.1815 15L16.8678 26.3137C16.0868 27.0948 16.0868 28.3611 16.8678 29.1421C17.6489 29.9232 18.9152 29.9232 19.6962 29.1421L32.4242 16.4142ZM0 17H31.01V13H0L0 17Z" fill="white"/>
+              </svg>
+              </button>
+            </div>
           </div>
-          <div class="open-more-section__img-wrap">
-            <img src="img/open-right.webp" alt="" class="open-more-section__img">
+        </div>
+      </div>
+      <div class="section-products-swiper__swiper-wrap">
+        <div class="container">
+          <div class="section-products-swiper__swiper products-swiper swiper" productsSlider_js>
+            <div class="section-products-swiper__swiper-wrapper products-swiper__wrapper swiper-wrapper">
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+              <div class="products-swiper__slide swiper-slide">
+                <article class="section-products-swiper__product-card product-card">
+                  <div class="product-card__img-wrap">
+                    <button href="img/product-1.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
+                      <svg class="product-card__img-full-btn-icon" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.958 12.6086C10.0373 12.6086 12.5335 10.1123 12.5335 7.03305C12.5335 3.95377 10.0373 1.45752 6.958 1.45752C3.87872 1.45752 1.38247 3.95377 1.38247 7.03305C1.38247 10.1123 3.87872 12.6086 6.958 12.6086Z" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.4649 11.2148L13.7173 14.4672" stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <img src="img/product-1.webp" alt="" class="product-card__img">
+                  </div>
+                  <button class="wishlist__btn">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11.4255 20.2207C11.2764 20.2202 11.1316 20.1704 11.0137 20.0789C7.26053 17.1628 4.67512 14.6516 2.86602 12.1742C0.557383 9.00828 0.0308525 6.08536 1.29993 3.48645C2.20448 1.63009 4.80338 0.111256 7.84106 0.995558C9.28938 1.41391 10.553 2.31106 11.4255 3.54046C12.298 2.31106 13.5617 1.41391 15.01 0.995558C18.0409 0.124757 20.6466 1.63009 21.5511 3.48645C22.8202 6.08536 22.2937 9.00828 19.985 12.1742C18.1759 14.6516 15.5905 17.1628 11.8373 20.0789C11.7195 20.1704 11.5747 20.2202 11.4255 20.2207ZM6.11296 2.09587C5.39016 2.06774 4.67335 2.23699 4.03947 2.58544C3.40559 2.9339 2.87857 3.44841 2.515 4.07374C1.46869 6.22036 1.94121 8.61 3.95958 11.3709C6.10457 14.1376 8.61628 16.5994 11.4255 18.6883C14.2343 16.6014 16.746 14.142 18.8915 11.3777C20.9166 8.61 21.3824 6.22036 20.336 4.08049C19.661 2.73041 17.6359 1.6571 15.3813 2.29163C14.6583 2.50528 13.9881 2.86793 13.4138 3.35622C12.8395 3.84452 12.3737 4.44765 12.0466 5.1268C11.9957 5.25061 11.9092 5.3565 11.798 5.43103C11.6868 5.50556 11.556 5.54535 11.4221 5.54535C11.2883 5.54535 11.1575 5.50556 11.0463 5.43103C10.9351 5.3565 10.8486 5.25061 10.7977 5.1268C10.473 4.44595 10.0081 3.84141 9.4334 3.35281C8.85872 2.86421 8.18726 2.50258 7.46304 2.29163C7.02425 2.16419 6.56988 2.0983 6.11296 2.09587Z" fill="black" fill-opacity="0.25"/>
+                    </svg>
+                  </button>
+                  <div class="product-card__content-wrap">
+                    <h3 class="product-card__title">
+                      6085 БЕЖЕВЫЙ
+                    </h3>
+                    <ul class="product-card__color-list">
+                      <li class="product-card__color-item">
+                        <button class="product-card__color selected" title="" data-product="1">
+                          <img src="img/color1.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="2">
+                          <img src="img/color2.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="3">
+                          <img src="img/color3.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                      <li class="product-card__color-item">
+                        <button class="product-card__color" title="" data-product="4">
+                          <img src="img/color4.webp" alt="" class="product-card__color-img">
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="product-card__price-wrap">
+                      <div class="product-card__price-old">
+                        420.00 BYN
+                      </div>
+                      <div class="product-card__price">
+                        340.00 BYN
+                      </div>
+                    </div>
+                    <a href="" class="product-card__btn animated btn">
+                      Подробнее
+                    </a>
+                  </div>
+                  <div class="preloader product-preloader">
+                    <div class="preloader-icon product-preloader-icon"></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="section-products-swiper__scrollbar swiper-scrollbar"></div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-hit section">
+    <section class="section section-partners">
       <div class="container">
-        <div class="section-hit__title-wrap section-title-wrap">
-          <h2 class="section-hit__title title section-title">
-            Хит продаж
-          </h2>
-          <a href="#catalog" class="section-hit__btn section-hit__btn_desk btn">
-            Смотреть все
-          </a>
-          <div class="swiper__navigation section-hit__swiper-navigation">
-            <button class="swiper__navigation-btn-prev swiper__navigation-btn">
-              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-            <button class="swiper__navigation-btn-next swiper__navigation-btn">
-              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-          </div>
+        <div class="section-title title center section-partners__title">
+          С кем мы работаем
         </div>
-        <div class="section-hit__swiper-wrap">
-          <div class="section-hit__swiper swiper hit-products-swiper" hitsSlider_js>
-            <div class="swiper-wrapper hit-products-swiper__wrapper">
-              <div class="new-swiper__slide swiper-slide">
-                <div class="section-hit__product-card-hover-wrap">
-                  <div class="section-hit__product-card-hover product-card">
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-girl.webp" alt="" class="product-card__img">
-                    </div>
-                  </div>
-                  <article class="product-card section-hit__product-card-hidden">
-                    <div class="product-card__img-wrap">
-                      <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                        <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                      </button>
-                      <img src="img/product-girl.webp" alt="" class="product-card__img">
-                    </div>
-                    <div class="product-card__content-wrap">
-                      <h3 class="product-card__title">
-                        6085 БЕЖЕВЫЙ
-                      </h3>
-                      <ul class="product-card__color-list">
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                        </li>
-                      </ul>
-                      <ul class="product-card__sizes">
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            46
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            48
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            50
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            52
-                          </span>
-                        </li>
-                      </ul>
-                      <button class="product-card__btn btn" popupOpen="product-1">
-                        Подробнее
-                      </button>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <div class="new-swiper__slide swiper-slide">
-                <div class="section-hit__product-card-hover-wrap">
-                  <div class="section-hit__product-card-hover product-card">
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-girl.webp" alt="" class="product-card__img">
-                    </div>
-                  </div>
-                  <article class="product-card section-hit__product-card-hidden">
-                    <div class="product-card__img-wrap">
-                      <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                        <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                      </button>
-                      <img src="img/product-girl.webp" alt="" class="product-card__img">
-                    </div>
-                    <div class="product-card__content-wrap">
-                      <h3 class="product-card__title">
-                        6085 БЕЖЕВЫЙ
-                      </h3>
-                      <ul class="product-card__color-list">
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                        </li>
-                      </ul>
-                      <ul class="product-card__sizes">
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            46
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            48
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            50
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            52
-                          </span>
-                        </li>
-                      </ul>
-                      <button class="product-card__btn btn" popupOpen="product-1">
-                        Подробнее
-                      </button>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <div class="new-swiper__slide swiper-slide">
-                <div class="section-hit__product-card-hover-wrap">
-                  <div class="section-hit__product-card-hover product-card">
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-girl.webp" alt="" class="product-card__img">
-                    </div>
-                  </div>
-                  <article class="product-card section-hit__product-card-hidden">
-                    <div class="product-card__img-wrap">
-                      <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                        <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                      </button>
-                      <img src="img/product-girl.webp" alt="" class="product-card__img">
-                    </div>
-                    <div class="product-card__content-wrap">
-                      <h3 class="product-card__title">
-                        6085 БЕЖЕВЫЙ
-                      </h3>
-                      <ul class="product-card__color-list">
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                        </li>
-                      </ul>
-                      <ul class="product-card__sizes">
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            46
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            48
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            50
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            52
-                          </span>
-                        </li>
-                      </ul>
-                      <button class="product-card__btn btn" popupOpen="product-1">
-                        Подробнее
-                      </button>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <div class="new-swiper__slide swiper-slide">
-                <div class="section-hit__product-card-hover-wrap">
-                  <div class="section-hit__product-card-hover product-card">
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-girl.webp" alt="" class="product-card__img">
-                    </div>
-                  </div>
-                  <article class="product-card section-hit__product-card-hidden">
-                    <div class="product-card__img-wrap">
-                      <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                        <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                      </button>
-                      <img src="img/product-girl.webp" alt="" class="product-card__img">
-                    </div>
-                    <div class="product-card__content-wrap">
-                      <h3 class="product-card__title">
-                        6085 БЕЖЕВЫЙ
-                      </h3>
-                      <ul class="product-card__color-list">
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                        </li>
-                      </ul>
-                      <ul class="product-card__sizes">
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            46
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            48
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            50
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            52
-                          </span>
-                        </li>
-                      </ul>
-                      <button class="product-card__btn btn" popupOpen="product-1">
-                        Подробнее
-                      </button>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <div class="new-swiper__slide swiper-slide">
-                <div class="section-hit__product-card-hover-wrap">
-                  <div class="section-hit__product-card-hover product-card">
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-girl.webp" alt="" class="product-card__img">
-                    </div>
-                  </div>
-                  <article class="product-card section-hit__product-card-hidden">
-                    <div class="product-card__img-wrap">
-                      <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                        <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                      </button>
-                      <img src="img/product-girl.webp" alt="" class="product-card__img">
-                    </div>
-                    <div class="product-card__content-wrap">
-                      <h3 class="product-card__title">
-                        6085 БЕЖЕВЫЙ
-                      </h3>
-                      <ul class="product-card__color-list">
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                        </li>
-                        <li class="product-card__color-item">
-                          <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                        </li>
-                      </ul>
-                      <ul class="product-card__sizes">
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            46
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            48
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            50
-                          </span>
-                        </li>
-                        <li class="product-card__sizes-item">
-                          <span class="product-card__size">
-                            52
-                          </span>
-                        </li>
-                      </ul>
-                      <button class="product-card__btn btn" popupOpen="product-1">
-                        Подробнее
-                      </button>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-scroll"></div>
-          </div>
-        </div>
-        <ul class="section-hit__products-list hit-products-mob">
-          <li class="hit-products-mob__item section-hit__products-list-item">
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                  <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                </button>
-                <img src="img/product-girl.webp" alt="" class="product-card__img">
-              </div>
-              <div class="product-card__content-wrap">
-                <h3 class="product-card__title">
-                  6085 БЕЖЕВЫЙ
-                </h3>
-                <ul class="product-card__color-list">
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                  </li>
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                  </li>
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                  </li>
-                </ul>
-                <ul class="product-card__sizes">
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      46
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      48
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      50
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      52
-                    </span>
-                  </li>
-                </ul>
-                <button class="product-card__btn btn" popupOpen="product-1">
-                  Подробнее
-                </button>
-              </div>
-            </article>
-          </li>
-          <li class="hit-products-mob__item section-hit__products-list-item">
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                  <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                </button>
-                <img src="img/product-girl.webp" alt="" class="product-card__img">
-              </div>
-              <div class="product-card__content-wrap">
-                <h3 class="product-card__title">
-                  6085 БЕЖЕВЫЙ
-                </h3>
-                <ul class="product-card__color-list">
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                  </li>
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                  </li>
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                  </li>
-                </ul>
-                <ul class="product-card__sizes">
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      46
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      48
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      50
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      52
-                    </span>
-                  </li>
-                </ul>
-                <button class="product-card__btn btn" popupOpen="product-1">
-                  Подробнее
-                </button>
-              </div>
-            </article>
-          </li>
-          <li class="hit-products-mob__item section-hit__products-list-item">
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                  <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                </button>
-                <img src="img/product-girl.webp" alt="" class="product-card__img">
-              </div>
-              <div class="product-card__content-wrap">
-                <h3 class="product-card__title">
-                  6085 БЕЖЕВЫЙ
-                </h3>
-                <ul class="product-card__color-list">
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                  </li>
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                  </li>
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                  </li>
-                </ul>
-                <ul class="product-card__sizes">
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      46
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      48
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      50
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      52
-                    </span>
-                  </li>
-                </ul>
-                <button class="product-card__btn btn" popupOpen="product-1">
-                  Подробнее
-                </button>
-              </div>
-            </article>
-          </li>
-          <li class="hit-products-mob__item section-hit__products-list-item">
-            <article class="product-card">
-              <div class="product-card__img-wrap">
-                <button href="img/product-girl.webp" class="product-card__img-full-btn" aria-label="" data-fancybox>
-                  <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                </button>
-                <img src="img/product-girl.webp" alt="" class="product-card__img">
-              </div>
-              <div class="product-card__content-wrap">
-                <h3 class="product-card__title">
-                  6085 БЕЖЕВЫЙ
-                </h3>
-                <ul class="product-card__color-list">
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                  </li>
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                  </li>
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                  </li>
-                </ul>
-                <ul class="product-card__sizes">
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      46
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      48
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      50
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      52
-                    </span>
-                  </li>
-                </ul>
-                <button class="product-card__btn btn" popupOpen="product-1">
-                  Подробнее
-                </button>
-              </div>
-            </article>
-          </li>
-        </ul>
-        <a href="#catalog" class="section-hit__btn section-hit__btn_mob btn">
-          Смотреть все
-        </a>
       </div>
-    </section>
-    <section class="section-last-size section">
-      <div class="container container-full section-last-size__container">
-        <div class="section-hit__title-wrap section-title-wrap">
-          <h2 class="section-hit__title title section-title">
-            Последний Размер
-          </h2>
-          <a href="#catalog" class="section-hit__btn section-hit__btn_desk btn">
-            Смотреть все
-          </a>
-          <div class="swiper__navigation section-last-size__swiper-navigation">
-            <button class="swiper__navigation-btn-prev swiper__navigation-btn">
-              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-            <button class="swiper__navigation-btn-next swiper__navigation-btn">
-              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="section-last-size__swiper-wrap">
-          <div class="section-last-size__swiper" lastSizeSlider_js>
-            <div class="swiper-wrapper section-last-size__swiper-wrapper">
-              <div class="swiper-slide section-last-size__swiper-slide">
-                <article class="product-card-short section-last-size__product-card">
-                  <div class="product-card__img-wrap product-card-short__img-wrap">
-                    <img src="img/2021.webp" alt="" class="product-card__img">
-                  </div>
-                  <div class="product-card-short__btn product-card__btn btn-hover btn">
-                    Подробнее
-                  </div>
-                  <button class="product-card__btn product-card-short__btn-hidden btn" popupOpen="product-1">
-                  </button>
-                </article>
-              </div>
-              <div class="swiper-slide section-last-size__swiper-slide">
-                <article class="product-card-short section-last-size__product-card">
-                  <div class="product-card__img-wrap product-card-short__img-wrap">
-                    <img src="img/2021.webp" alt="" class="product-card__img">
-                  </div>
-                  <div class="product-card-short__btn product-card__btn btn-hover btn">
-                    Подробнее
-                  </div>
-                  <button class="product-card__btn product-card-short__btn-hidden btn" popupOpen="product-1">
-                  </button>
-                </article>
-              </div>
-              <div class="swiper-slide section-last-size__swiper-slide">
-                <article class="product-card-short section-last-size__product-card">
-                  <div class="product-card__img-wrap product-card-short__img-wrap">
-                    <img src="img/2021.webp" alt="" class="product-card__img">
-                  </div>
-                  <div class="product-card-short__btn product-card__btn btn-hover btn">
-                    Подробнее
-                  </div>
-                  <button class="product-card__btn product-card-short__btn-hidden btn" popupOpen="product-1">
-                  </button>
-                </article>
-              </div>
+      <div class="container marquee-container container-full">
+        <div class="section-partners__swiper swiper">
+          <div class="section-partners__swiper-wrapper swiper-wrapper">
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
             </div>
-            <div class="swiper-scroll"></div>
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
+            </div>
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
+            </div>
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
+            </div>
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
+            </div>
+            <div class="section-partners__swiper-slide swiper-slide">
+              <img src="img/partner.webp" alt="Logo 1">
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-sale section">
-      <div class="container container-full">
-        <div class="section-sale__wrap">
-          <div class="section-sale__img-wrap">
-            <img src="img/sale-1.webp" alt="" class="section-sale__img">
-          </div>
-          <div class="section-sale__img-wrap">
-            <img src="img/sale-2.webp" alt="" class="section-sale__img">
-          </div>
-          <div class="section-sale__img-wrap">
-            <img src="img/sale-3.webp" alt="" class="section-sale__img">
-          </div>
-          <div class="section-sale__content">
-            <div class="section-sale__title">
-              ПОЛУЧИТЕ СКИДКУ НА ПЕРВЫЙ ЗАКАЗ
-            </div>
-            <a href="#catalog" class="section-sale__btn btn-reverse open-more-section__btn btn">
-              Каталог
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-last-size section-plus-size section" id="plus-size">
-      <div class="container container-full section-last-size__container">
-        <div class="section-hit__title-wrap section-title-wrap">
-          <h2 class="section-hit__title title section-title">
-            Plus Size
-          </h2>
-          <div class="swiper__navigation section-plus-size__swiper-navigation">
-            <button class="swiper__navigation-btn-prev swiper__navigation-btn">
-              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-            <button class="swiper__navigation-btn-next swiper__navigation-btn">
-              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="section-last-size__swiper-wrap">
-          <div class="section-last-size__swiper" plusSizeSlider_js>
-            <div class="swiper-wrapper section-last-size__swiper-wrapper">
-              <div class="swiper-slide section-last-size__swiper-slide">
-                <article class="product-card-short section-last-size__product-card">
-                  <div class="product-card__img-wrap product-card-short__img-wrap">
-                    <img src="img/2021.webp" alt="" class="product-card__img">
-                  </div>
-                  <div class="product-card-short__btn product-card__btn btn-hover btn">
-                    Подробнее
-                  </div>
-                  <button class="product-card__btn product-card-short__btn-hidden btn" popupOpen="product-1">
-                  </button>
-                </article>
-              </div>
-              <div class="swiper-slide section-last-size__swiper-slide">
-                <article class="product-card-short section-last-size__product-card">
-                  <div class="product-card__img-wrap product-card-short__img-wrap">
-                    <img src="img/2021.webp" alt="" class="product-card__img">
-                  </div>
-                  <div class="product-card-short__btn product-card__btn btn-hover btn">
-                    Подробнее
-                  </div>
-                  <button class="product-card__btn product-card-short__btn-hidden btn" popupOpen="product-1">
-                  </button>
-                </article>
-              </div>
-              <div class="swiper-slide section-last-size__swiper-slide">
-                <article class="product-card-short section-last-size__product-card">
-                  <div class="product-card__img-wrap product-card-short__img-wrap">
-                    <img src="img/2021.webp" alt="" class="product-card__img">
-                  </div>
-                  <div class="product-card-short__btn product-card__btn btn-hover btn">
-                    Подробнее
-                  </div>
-                  <button class="product-card__btn product-card-short__btn-hidden btn" popupOpen="product-1">
-                  </button>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-scroll"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-seo section">
-      <div class="container">
-        <p class="section-seo__text">
-          Бренд Beautiful and Free предлагает Вам отличные идеи для Вашего следующего эффектичного шоппинга-большой ассортимент женской стильной одежды премиум-качества!
-        </p>
-        <p class="section-seo__text">
-          Купить нашу одежду в розницу можно через Интернет-магазины женской одежды в Екатеринбурге, Москве, Нижнем Новгороде, Самаре, Омске, Красноярске, Перми, Новосибирске, Челябинске, Волгограде, Казани, Воронеже, Уфе, Санкт-Петербурге. Выбирайте понравившийся Интернет-магазин среди наших партнеров и делайте покупки с удовольствием!
-        </p>
-      </div>
-    </section>
-    <section class="section-sertificates section">
-      <div class="container section-sertificates__container">
-        <div class="section-sertificates__swiper-wrap">
-          <div class="section-sertificates__swiper swiper" sertificateSlider_js>
-            <div class="swiper-wrapper">
-              <div class="section-sertificates__swiper-slide swiper-slide">
-                <a href="img/sertificate-1.webp" class="section-sertificates__item" data-fancybox="certificate-gallery">
-                  <img src="img/sertificate-1.webp" alt="" class="section-sertificates__item-img">
-                </a>
-              </div>
-              <div class="section-sertificates__swiper-slide swiper-slide">
-                <a href="img/sertificate-2.webp" class="section-sertificates__item" data-fancybox="certificate-gallery">
-                  <img src="img/sertificate-2.webp" alt="" class="section-sertificates__item-img">
-                </a>
-              </div>
-              <div class="section-sertificates__swiper-slide swiper-slide">
-                <a href="img/sertificate-3.webp" class="section-sertificates__item" data-fancybox="certificate-gallery">
-                  <img src="img/sertificate-3.webp" alt="" class="section-sertificates__item-img">
-                </a>
-              </div>
-            </div>
-            <div class="swiper-scrollbar"></div>
-          </div>
-        </div>
-      </div>
-    </section> -->
   </main>
   <footer class="footer">
     <div class="container">
@@ -2377,6 +1820,7 @@
   <script src="js/lazyload.min.js"></script>
   <script src="js/odometer.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/intl-tel-input/js/intlTelInputWithUtils.min.js"></script>
   <script src="js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -2450,14 +1894,30 @@
     });
   </script>
   <script>
-		$('[phoneMask_JS]').mask('+375(99)999-99-99');
-    $('[phoneMask_JS]').on('focus', function() {
+		// $('[phoneMask_JS]').mask('+375(99)999-99-99');
+    // $('[phoneMask_JS]').on('focus', function() {
+    //   $(this).attr('placeholder', '+7(___)___-__-__');
+    // });
+    // $('[phoneMask_JS]').on('blur', function() {
+    //   $(this).attr('placeholder', 'Номер телефона');
+    // });
+    $('[phoneMask_JS]').each(function() {
+      var input = $(this)[0];
+      var iti = window.intlTelInput(input, {
+        utilsScript: "assets/intl-tel-input/js/utils.js", // Подключаем файл с утилитами
+        separateDialCode: true,
+        initialCountry: "BY", // Устанавливаем начальную страну (Белоруссия)
+        nationalMode: true,
+        autoPlaceholder: "aggressive",
+        strictMode: true, // Разрешаем выбор только этих стран
+        geoIpLookup: function(callback) {
+          $.get("https://ipapi.co/country_code/").done(function(countryCode) {
+            callback(countryCode);
+          });
+        }
+      });
+    });
 
-      $(this).attr('placeholder', '+7(___)___-__-__');
-    });
-    $('[phoneMask_JS]').on('blur', function() {
-      $(this).attr('placeholder', 'Номер телефона');
-    });
     $('form').on('submit', function(e) {
       e.preventDefault();
       if ($(this).valid()) {

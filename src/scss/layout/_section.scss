@@ -1,5 +1,5 @@
 .section {
-  padding-bottom: resp(70);
+  padding-bottom: resp(100);
   @include _767 {
     padding-bottom: resp(70, 360);
   }

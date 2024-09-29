@@ -1163,7 +1163,7 @@ $(document).ready(function () {
 
   var swiperMarque = new Swiper('.section-partners__swiper', {
     slidesPerView: 3,
-    spaceBetween: 20,
+    spaceBetween: 0,
     speed: 4500,
     loop: true,
     allowTouchMove: false, // можно ещё отключить свайп
@@ -1172,16 +1172,44 @@ $(document).ready(function () {
       disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
     },
     breakpoints: {
-      767: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
       992: {
-        slidesPerView: 4,
+        slidesPerView: 5,
         spaceBetween: 5,
       }
     }
   });
+
+  // dooors swipers
+  function doorsSwiperInit(el, isReverse = false, speed = 6500, initialSlide = 0) {
+    var swiper = new Swiper(el, {
+        direction: 'vertical',
+        slidesPerView: 1.4,
+        spaceBetween: 30,
+        speed: speed,
+        initialSlide: initialSlide,
+        loop: true,
+        allowTouchMove: false, // можно ещё отключить свайп
+        autoplay: {
+          delay: 0,
+          reverseDirection: isReverse,
+          disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+        },
+        // breakpoints: {
+        //   767: {
+
+        //   }
+        // }
+    });
+  }
+  var doorsSwiperEl1 = $('.section-doors__swiper_1');
+  var doorsSwiperEl2 = $('.section-doors__swiper_2');
+  var doorsSwiperEl3 = $('.section-doors__swiper_3');
+  var doorsSwiperEl4 = $('.section-doors__swiper_4');
+  doorsSwiperInit(doorsSwiperEl1[0]);
+  doorsSwiperInit(doorsSwiperEl2[0], true, 8500);
+  doorsSwiperInit(doorsSwiperEl3[0], false, 4800);
+  doorsSwiperInit(doorsSwiperEl4[0], true, 6200);
+
   const gallary__swiper = new Swiper('.gallary__swiper', {
     slidesPerView: 4,
     spaceBetween: '1%',
@@ -1254,10 +1282,12 @@ $(document).ready(function () {
             $this.removeClass('checked');
             $input.removeAttr('checked');
             $btn.addClass('disabled');
+            $btn.attr('disabled', true);
         } else {
             $this.addClass('checked');
             $input.attr('checked', '');
             $btn.removeClass('disabled');
+            $btn.removeAttr('disabled');
         }
     });
 
