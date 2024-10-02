@@ -1,4 +1,7 @@
 .section-partners {
+  @include _767 {
+    padding-bottom: 50px;
+  }
   &__title {
     margin-bottom: resp(50);
     color: #000;
