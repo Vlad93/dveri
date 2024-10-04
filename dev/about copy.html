@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- favicon  -->
   <link rel="shortcut icon" href="img/favicon.svg">
-  <title>Двери - Проф | Контакты</title>
+  <title>Двери - Проф</title>
 </head>
 <body>
   <header class="header">
@@ -272,14 +272,12 @@
               </span>
             </button>
             <div class="header__catalog-nav-wrap">
-              <div class="header__catalog-btn-wrap">
-                <button class="header__catalog-btn-close">
-                  <img src="img/close-icon.svg" alt="" class="header__catalog-btn-close-icon">
-                </button>
-                <a href="" class="header__catalog-btn-link">
+              <button class="header__catalog-btn-close">
+                <img src="img/close-icon.svg" alt="" class="header__catalog-btn-close-icon">
+                <span class="header__catalog-btn-close-text">
                   Каталог
-                </a>
-              </div>
+                </span>
+              </button>
               <ul class="header__catalog-nav catalog-nav">
                 <li class="catalog-nav__item">
                   <a href="" class="catalog-nav__link">
@@ -332,104 +330,170 @@
       <div class="container">
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-          <li class="breadcrumbs__item active"><span class="breadcrumbs__active-item">Контакты</span></li>
+          <li class="breadcrumbs__item active"><span class="breadcrumbs__active-item">О компании</span></li>
         </ul>
       </div>
     </section>
-    <section class="section section-contacts">
+    <section class="section section-main">
       <div class="container">
-        <h1 class="page-title title">
-          Контакты
-        </h1>
-        <ul class="section-contacts__shops">
-          <li class="section-contacts__shops-item">
-            <article class="section-contacts__shops-card contacts-shop-card">
-              <div class="contacts-shop-card__img-wrap">
-                <img src="" alt="" class="contacts-shop-card__img">
-              </div>
-              <a href="" class="section-map__address-list-link contacts-shop-card__link">
-                г. Минск ул. Каменногорская, 3 Горка Дом (2-этаж)
-              </a>
-            </article>
-          </li>
-          <li class="section-contacts__shops-item">
-            <article class="section-contacts__shops-card contacts-shop-card">
-              <div class="contacts-shop-card__img-wrap">
-                <img src="" alt="" class="contacts-shop-card__img">
-              </div>
-              <a href="" class="section-map__address-list-link contacts-shop-card__link">
-                г. Минск ул. Маяковского 24, Магазин "Дверной рай"
-              </a>
-            </article>
-          </li>
-          <li class="section-contacts__shops-item">
-            <article class="section-contacts__shops-card contacts-shop-card">
-              <div class="contacts-shop-card__img-wrap">
-                <img src="" alt="" class="contacts-shop-card__img">
-              </div>
-              <a href="" class="section-map__address-list-link contacts-shop-card__link">
-                г. Минск ул. Уручская 19-П2 (строй.рынок Уручье 2 этаж, Юркас)
-              </a>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="section-feedback section">
-      <div class="container">
-        <div class="section-feedback__wrap">
-          <div class="section-feedback__ur-adress">
-            <h3 class="section-feedback__ur-adress-title">
-              Юридический адрес:
-            </h3>
-            <p class="section-feedback__ur-adress-text">
-              ООО «Двери–Проф»<br>
-              УНП 193779842<br>
-              220114, РБ, 220114 Г. Минск, ул. Макаёнка, д.12Е, помещение 282<br>
-              р/с : BY40ALFA30122F36850010270000 (BYN)<br>
-              в ЗАО<br>
-              «Альфа-банк»БИК ALFABY2X
+        <div class="section-main__wrap">
+          <div class="section-main__content-top">
+            <h1 class="page-title title">
+              О компании
+            </h1>
+            <p class="section-main__content-top-text">
+              Компания «ДверьПром» - один из крупнейших отечественных производителей и комплексный поставщик дверей на территории Республики Беларусь, стран СНГ (Россия, Казахстан), Центральной и Западной Европы (Чехия, Германия, Польша, Литва и др.). Наша компания успешно комплектует объекты дверной продукцией любой сложности, воплощая в жизнь самые смелые дизайнерские идеи. Благодаря наличию собственного производства и отсутствию посредничества наша компания может предложить клиентам действительно качественный товар по доступной цене.
             </p>
           </div>
-          <div class="section-feedback__form-wrap">
-            <div class="section-feedback__form-title">
-              Обратная связь
-            </div>
-            <form action="#" method="post" class="section-feedback__form form" formValidate_JS>
-              <input type="hidden" name="action" value="request">
-              <input type="hidden" name="form" value="Обратная связь">
-              <div class="section-feedback__form-container form-container">
-                <div class="section-feedback__form-inputs-wrap">
-                  <div class="section-feedback__form-inputs">
-                    <div class="input-wrap">
-                      <label for="name" class="form-label">
-                        <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
-                      </label>
-                    </div>
-                    <div class="input-wrap">
-                      <label for="phone" class="form-label">
-                        <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Ваш номер телефона">
-                      </label>
-                    </div>
-                    <div class="input-wrap">
-                      <label for="email" class="form-label">
-                        <input type="text" name="email" class="form-input" required placeholder="Ваш e-mail">
-                      </label>
-                    </div>
-                  </div>
-                  <div class="input-wrap textarea">
-                    <label for="message" class="form-label">
-                      <textarea type="text" name="message" class="form-input form-textarea" placeholder="Сообщение"></textarea>
-                    </label>
-                  </div>
+          <div class="section-main__img-wrap">
+            <img class="section-main__img" src="img/about.webp" alt="">
+          </div>
+        </div>
+        <div class="section-main__content editor">
+          <p>
+            Многолетний опыт работы, работа специалистов высокого класса, качественное европейское оборудование, строгое следование государственным стандартам, экологическим и санитарным требованиям, позволяет компании "ДверьПром" занимать лидирующие позиции в рейтингах успешных производителей дверей.<br>
+            "Дверьпром" предлагает двери, в которых используются различные материалы (ПВХ, Массив дерева, МДФ, Полнотелое ДСП, Трубчатое ДСП, Пробка, Базальтовая плита, Свинцовая плита) и различные покрытия (шпон /экошпон /ПВХ /окраска эмалями /CPL /HPL). Мы имеем огромный практический опыт в любом сегменте этого рынка. Работаем с любыми материалами и конструктивом дверей (в соответствии с согласованным техническим заданием заказчика). Вы можете подобрать все характеристики по Вашему вкусу и желанию прямо на нашем сайте. В любом случае Ваша дверь будет изготовлена по индивидуальным размерам, что избавит Вас от лишних трат и трудностей при монтаже и последующей отделке откосов. Неизменным при этом останется лишь высочайшее качество исполнения дверей, производимых компанией «ДверьПром».
+          </p>
+          <p>
+            Мы специализируемся на дверях с особыми свойствами и характеристиками - Влагостойкие, Звукоизоляционные, Дымогазонепроницаемые, Рентгенозащитные, Противопожарные, Медицинские двери, Дизайнерские двери для отелей и премиального жилья, Финские двери с четвертью и без, Маятниковые двери.<br>
+            Также мы предлагаем двери эконом-сегмента для новостроек - межкомнатные, входные подъездные, квартирные сейф-двери, тамбурные деревянные двери, противопожарные металлические двери. Благодаря использованию самых современных знаний и технологий, богатому опыту в производстве дверных блоков мы можем с полной уверенностью сказать, что наша дверь - это изделие на уровне мировых стандартов.
+          </p>
+        </div>
+        <div class="section-main__video-wrap">
+          <video class="section-main__video" src="videos/about.mp4" muted loop autoplay></video>
+        </div>
+      </div>
+    </section>
+    <section class="section section-goal">
+      <div class="blue-title-wrap">
+        <div class="container">
+          <h2 class="section-goal__title blue-title">
+            В чем наша задача
+          </h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="section-goal__content editor">
+          <p>
+            Мы видим свою миссию в том, чтобы предоставлять клиентам лучший сервис в сегменте продажи дверей. Наша главная цель – создание первоклассной продукции на дверном рынке Республики Беларусь, стран СНГ и Европы для всех типов объектов:
+          </p>
+          <ul>
+            <li>для медицинских учреждений;</li>
+            <li>для гостиниц, отелей, пансионатов;</li>
+            <li>бизнес-центры (офисные здания);</li>
+            <li>школы и другие учебные заведения;</li>
+            <li>торговые и торгово-развлекательные центры;</li>
+            <li>рестораны и кафе;</li>
+            <li>кинотеатры;</li>
+            <li>государственные учреждения;</li>
+            <li>спортивные учреждения;</li>
+            <li>и другие.</li>
+          </ul>
+          <p>
+            На этом пути мы: постоянно повышаем уровень знаний наших менеджеров, чтобы дать максимально полный ответ клиенту и решить его задачу; оказываем полный комплекс услуг от замера и консультации до установки дверей; выполняем гарантийные обязательства «от» и «до»; всегда выступаем на стороне клиента, прислушиваемся к пожеланиям.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section section-advantages">
+      <div class="blue-title-wrap">
+        <div class="container">
+          <h2 class="section-advantages__title blue-title center">
+            Наши сильные стороны
+          </h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="section-advantages__content">
+          <ul class="section-advantages__billets">
+            <li class="section-advantages__billets-item">
+              <article class="section-advantages__billets-card section-advantages__card">
+                <div class="section-advantages__card-title">
+                  Сертифицированная фабричная продукция
                 </div>
-                <div class="section-feedback__form-btn-wrap">
-                  <p class="section-feedback__form-hint form-hint">
-                    *Отправляя форму, вы даёте согласие на обработку <a href="" class="agreement-link" target="_blank">персональных данных</a>.
-                  </p>
-                  <button class="section-feedback__form-btn form-btn animated btn">
-                    <span>Отправить</span>
+                <p class="section-advantages__card-text">
+                  Мы работаем с сертифицированным материалом ведущих европейских производителей, который сами тщательно отбираем и привозим. Ваш объект будет укомплектован продукцией высокого качества. Качество продукции, продуманные до мелочей базовые варианты предлагаемых моделей дверей, возможность использования комплектующих и фурнитуры специального назначения обеспечивают безопасность эксплуатации здания.
+                </p>
+              </article>
+            </li>
+            <li class="section-advantages__billets-item">
+              <article class="section-advantages__billets-card section-advantages__card">
+                <div class="section-advantages__card-title">
+                  Первоклассный сервис
+                </div>
+                <p class="section-advantages__card-text">
+                  На каждом этапе сотрудничества с Вами будут работать сотрудники разных отделов (продавцы, логисты, монтажники и другие специалисты), способные оперативно оказать квалифицированную помощь в решении любых вопросов. Сотрудничество практически со всеми транспортными компаниями позволяет оптимизировать и ускорить доставку нашей продукции в регионы, а также существенно снизить её стоимость.
+                  Двери компании "ДверьПром" - надежые, современные и стильные решения для общественных зданий!
+                </p>
+              </article>
+            </li>
+            <li class="section-advantages__billets-item">
+              <article class="section-advantages__billets-card section-advantages__card">
+                <div class="section-advantages__card-title">
+                  Индивидуальный подход
+                </div>
+                <p class="section-advantages__card-text">
+                  Изготавливаем двери для объектов общественного пользования по индивидуальному заказу в точном соответствии с Вашим проектом: габаритные размеры дверного блока, цвет коробки и дверного полотна, стандартные и дополнительные комплектующие в зависимости от предназначения каждого отдельного дверного блока. Использование дверного полотна, оклеенного подходящим ламинатом CPL или HPL, и порошковая окраска дверной коробки в тон полотна по цветовой шкале RAL обеспечивают единый внешний вид помещений согласно дизайн-проекта.
+                </p>
+              </article>
+            </li>
+            <li class="section-advantages__billets-item">
+              <article class="section-advantages__billets-card section-advantages__card">
+                <div class="section-advantages__card-title">
+                  Профессиональные замерщики, опытные монтажники
+                </div>
+                <p class="section-advantages__card-text">
+                  Выбор дверей – задача сложная. Мы помогаем Вам принять правильное решение и приобрести двери, которые будут радовать вас. Вы можете вызвать нашего специалиста по замерам, связавшись со специалистом оптового отдела по телефону <a href="tel:+375293133111"><strong>+375(29)313-31-11</strong></a>. Специалист нашей компании посетит Вас в оговоренные сроки, и не только осуществит точный замер, но и продемонстрирует образцы отделки, проконсультирует вас по возникшим вопросам и стоимости изделия. Услуги замерщика предоставляются бесплатно при условии оформления договора на покупку нашей продукции. За установку можете не беспокоиться – мы обо всем позаботимся!
+                </p>
+              </article>
+            </li>
+            <li class="section-advantages__billets-item">
+              <article class="section-advantages__billets-card section-advantages__card">
+                <div class="section-advantages__card-title">
+                  Максимальная скидка
+                </div>
+                <p class="section-advantages__card-text">
+                  Мы добились максимальных скидок от поставщиков фурнитуры и<br> комплектующих, что существенно снижает цену двери
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section section-zamer">
+      <div class="container">
+        <div class="section-zamer__wrap">
+          <div class="section-zamer__content">
+            <div class="section-zamer__title">
+              ОФОРМИТЕ ЗАЯВКУ НА БЕСПЛАТНЫЙ ВЫЕЗД ИНЖЕНЕРА ЗАМЕРЩИКА
+            </div>
+            <p class="section-zamer__text">
+              Услуга замера поможет сэкономить деньги и избежать ошибок в процессе подготовки дверных проемов и правильной укладки напольных покрытий, позволит узнать точную стоимость заказа, а также максимально приблизит вас к решению «дверного вопроса».
+            </p>
+          </div>
+          <div class="section-zamer__form-wrap">
+              <form action="#" method="post" class="section-zamer__form form" formValidate_JS>
+              <input type="hidden" name="action" value="request">
+              <input type="hidden" name="form" value="Бесплатный выезд замерщика">
+              <div class="section-zamer__form-container form-container">
+                <div class="input-wrap required">
+                  <label for="name" class="form-label">
+                    <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
+                  </label>
+                </div>
+                <div class="input-wrap required">
+                  <label for="phone" class="form-label">
+                    <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Телефон">
+                  </label>
+                </div>
+                <div class="section-zamer__form-btn-wrap">
+                  <button class="section-zamer__form-btn form-btn animated btn">
+                    <span>Вызвать замерщика</span>
                   </button>
+                  <p class="section-zamer__form-hint form-hint">
+                    Нажимая на кнопку «Вызвать замерщика» вы принимаете условия <a href="" class="agreement-link" target="_blank">Публичной оферты</a>.
+                  </p>
                 </div>
               </div>
             </form>

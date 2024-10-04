@@ -272,12 +272,14 @@
               </span>
             </button>
             <div class="header__catalog-nav-wrap">
-              <button class="header__catalog-btn-close">
-                <img src="img/close-icon.svg" alt="" class="header__catalog-btn-close-icon">
-                <span class="header__catalog-btn-close-text">
+              <div class="header__catalog-btn-wrap">
+                <button class="header__catalog-btn-close">
+                  <img src="img/close-icon.svg" alt="" class="header__catalog-btn-close-icon">
+                </button>
+                <a href="" class="header__catalog-btn-link">
                   Каталог
-                </span>
-              </button>
+                </a>
+              </div>
               <ul class="header__catalog-nav catalog-nav">
                 <li class="catalog-nav__item">
                   <a href="" class="catalog-nav__link">
@@ -1653,215 +1655,34 @@
     <div class="preloader-icon"></div>
   </div>
 
-  <!-- <button class="to-top btn" toTop_JS></button> -->
+  <button class="to-top btn" toTop_JS>
+    <svg class="to-top__icon" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.8723 0.323244L8.00001 7.02224L1.12776 0.323244C1.00498 0.203313 0.84015 0.136171 0.668513 0.136171C0.496876 0.136171 0.332048 0.203313 0.209263 0.323244C0.149811 0.381495 0.10258 0.451023 0.0703363 0.527756C0.0380925 0.60449 0.0214844 0.686886 0.0214844 0.770119C0.0214844 0.853352 0.0380925 0.935747 0.0703363 1.01248C0.10258 1.08921 0.149811 1.15874 0.209263 1.21699L7.52014 8.34499C7.64853 8.47014 7.82072 8.54018 8.00001 8.54018C8.1793 8.54018 8.3515 8.47014 8.47989 8.34499L15.7908 1.21837C15.8506 1.16007 15.8982 1.09038 15.9307 1.01339C15.9632 0.9364 15.9799 0.853683 15.9799 0.770119C15.9799 0.686555 15.9632 0.603837 15.9307 0.526849C15.8982 0.449861 15.8506 0.380163 15.7908 0.321868C15.668 0.201938 15.5032 0.134796 15.3315 0.134796C15.1599 0.134796 14.995 0.201938 14.8723 0.321868V0.323244Z"></path>
+    </svg>
+  </button>
 
-  <div class="popup product-popup fade" popupID="product-1">
+
+<div class="popup zamer-popup fade" popupID="zamer">
     <div class="popup__container">
-      <div class="popup__block product-popup__block">
-        <div class="product-popup__content popup__content">
-          <div class="product-popup__gallery">
-            <div class="swiper product-popup__gallery-swiper-large popup-gallery-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="popup-gallery-swiper__img-wrap">
-                    <button href="img/product-girl.webp" class="popup-gallery-swiper__img-full-btn product-card__img-full-btn" aria-label="" data-fancybox>
-                      <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                    </button>
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="popup-gallery-swiper__img-wrap">
-                    <button href="img/product-girl.webp" class="popup-gallery-swiper__img-full-btn product-card__img-full-btn" aria-label="" data-fancybox>
-                      <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                    </button>
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="popup-gallery-swiper__img-wrap">
-                    <button href="img/product-girl.webp" class="popup-gallery-swiper__img-full-btn product-card__img-full-btn" aria-label="" data-fancybox>
-                      <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                    </button>
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="popup-gallery-swiper__img-wrap">
-                    <button href="img/product-girl.webp" class="popup-gallery-swiper__img-full-btn product-card__img-full-btn" aria-label="" data-fancybox>
-                      <svg class="product-card__img-full-btn-icon"><use xlink:href="#lupa"></use></svg>
-                    </button>
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-popup__video-wrap">
-                    <div class="videoreview video-item">
-                      <img class="video-item__preview" src="img/product-girl.webp" alt="Video Poster">
-                      <a class="videoreview__link video-item__link" data-fancybox="video" href="#video1"></a>
-                      <span class="video-item__dark"></span>
-                    </div>
-                    <!-- Скрытое видео HTML5 -->
-                    <div style="display: none;">
-                      <div id="video1">
-                        <video muted controls>
-                          <source src="videos/video.mp4" type="video/mp4">
-                        </video>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper product-popup__gallery-swiper-thumbs gallery-swiper-thumbs">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide gallery-swiper-thumbs__slide">
-                  <div class="gallery-swiper-thumbs__img-wrap">
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                </div>
-                <div class="swiper-slide gallery-swiper-thumbs__slide">
-                  <div class="gallery-swiper-thumbs__img-wrap">
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                </div>
-                <div class="swiper-slide gallery-swiper-thumbs__slide">
-                  <div class="gallery-swiper-thumbs__img-wrap">
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                </div>
-                <div class="swiper-slide gallery-swiper-thumbs__slide">
-                  <div class="gallery-swiper-thumbs__img-wrap">
-                    <img src="img/product-girl.webp" alt="" class="product-card__img">
-                  </div>
-                </div>
-                <div class="swiper-slide gallery-swiper-thumbs__slide">
-                  <div class="product-popup__video-wrap">
-                    <div class="videoreview video-item">
-                      <img class="video-item__preview" src="img/product-girl.webp" alt="Video Poster">
-                      <div class="videoreview__link video-item__link small"></div>
-                      <span class="video-item__dark"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-scrollbar"></div>
-            </div>
+      <div class="popup__block zamer-popup__block">
+        <div class="zamer-popup__content popup__content">
+          <div class="zamer-popup__img-wrap popup__img-wrap">
+            <img src="img/popup-img.webp" alt="" class="zamer-popup__img popup__img">
           </div>
-          <div class="product-popup__info">
-            <div class="product-popup__title">
-              6085 БЕЖЕВЫЙ
+          <div class="zamer-popup__main popup__main">
+            <div class="zamer-popup__form-title popup__form-title">
+              Заявка на замер
             </div>
-            <div class="product-popup__info-table">
-              <div class="product-popup__info-table-subtitle product-popup__info-subtitle">
-                <span class="product-popup__colors-text">
-                  Цвет:
-                </span>
-              </div>
-              <div class="product-popup__info-table-content product-popup__colors">
-                <ul class="product-card__color-list">
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Черный" style="background-color: #0C0C0C;"></button>
-                  </li>
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Синий" style="background-color: #7DC3EB;"></button>
-                  </li>
-                  <li class="product-card__color-item">
-                    <button class="product-card__color" title="Зеленый" style="background-color: #748C70;"></button>
-                  </li>
-                </ul>
-              </div>
-              <div class="product-popup__info-table-subtitle product-popup__info-subtitle">
-                <span class="product-popup__sizes-text">
-                  Размер:
-                </span>
-              </div>
-              <div class="product-popup__info-table-content product-popup__sizes">
-                <ul class="product-card__sizes">
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      46
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      48
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      50
-                    </span>
-                  </li>
-                  <li class="product-card__sizes-item">
-                    <span class="product-card__size">
-                      52
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div class="product-popup__info-table-subtitle product-popup__info-subtitle">
-                <span class="product-popup__compound-text">
-                  Состав:
-                </span>
-              </div>
-              <div class="product-popup__info-table-content product-popup__compound">
-                <p class="product-popup__compound-text product-popup__info-text">
-                  Блузка– вискоза 80%; хлопок 20% брюки – вискоза 50%; хлопок 36%; п/э 14%
-                </p>
-              </div>
-            </div>
-            <div class="product-popup__info-desc">
-              <span class="product-popup__info-subtitle">
-                Описание:
-              </span>
-              <p class="product-popup__info-text">
-                м6079(комплект женский) размерный ряд:52-54-56-58 Комплект2-ка, состоящий из блузки и брюк, предназначен для повседневного использования. Блузкасвободного силуэта, выполнена из вискозного, штапельного полотна. Передняя часть цельнокроеная, с двумя нагрудными выточкамии двумя прорезными горизонтальными карманами с листочкой, в нижней части переда. Спинка цельнокроеная. Вырез горловины V – образной формы с дополнительным воротником – стойкой. Застежка центральная на петли и пуговицы. Рукав длиной до локтя, одношовный, втачной, с притачной манжетой в нижней части. Ширина манжеты 5,5 см., с небольшим разрезом по центру. Низ изделия не ровный, закруглён в сторону боковых швов. Брюкиспортивного типа, с высокой посадкой, с карманами в верхней части боковых швов. Передняя половинка брюк с декоративными подрезами в нижней части. Застежка отсутствует. В верхней части расположен декоративный элемент в виде гульфика. Поясна резинке, что придает изделию дополнительный комфорт при носке. С учётом плюсовых прибавок подходит на рост 170 см. Длина блузки(по среднему шву спинки) –67-68,5см. Длина рукава (в блузке): - 38-38,5 см. Длина брюк (по боковому шву)–95,5см. состав:блузка– вискоза 80%; хлопок 20% брюки – вискоза 50%; хлопок 36%; п/э 14%
-              </p>
-            </div>
-            <button class="product-popup__btn btn btn-reverse" popupOpen="order">
-              Заказать
-            </button>
-          </div>
-          <div class="product-popup__close popup__close" popupClose_JS>
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" fill="#1C1718"/>
-            </svg>
-          </div>
-      </div>
-  </div>
-    <div class="popup__blur" popupClose_JS></div>
-  </div>
-  </div>
-
-
-  <div class="popup order-popup fade" popupID="order">
-    <div class="popup__container">
-      <div class="popup__block order-popup__block">
-        <div class="order-popup__content popup__content">
-          <div class="order-popup__img-wrap">
-            <img src="img/order-girl.webp" alt="" class="order-popup__img">
-          </div>
-          <div class="order-popup__main popup__main">
-            <div class="popup__logo-wrap order-popup__logo-wrap">
-              <img src="img/icons/popup-logo.svg" alt="" class="popup__logo">
-            </div>
-            <div class="order-popup__form-title popup__form-title">
-              Оставьте заявку и наши специалисты свяжутся с Вами в ближайшее время
-            </div>
-            <form action="#" method="POST" class="order-popup__form popup-form" formValidate_JS>
+            <p class="zamer-popup__form-text popup__form-text">
+              Укажите ваше имя и контактный телефон. В&nbsp;самое&nbsp;ближайшее время наш оператор Вам&nbsp;перезвонит.
+            </p>
+            <form action="#" method="POST" class="zamer-popup__form popup-form" formValidate_JS>
               <input type="hidden" name="action" value="request">
-              <input type="hidden" name="form" value="Заказ товара">
-              <input type="hidden" name="product-id" value="">
-              <div class="order-popup__form-container form-container">
+              <input type="hidden" name="form" value="Заявка на замер">
+              <div class="zamer-popup__form-container form-container">
                 <div class="input-wrap  required">
                   <label for="name" class="form-label">
-                    <input type="text" name="name" class="form-input" required placeholder="Введите имя">
-                  </label>
-                </div>
-                <div class="input-wrap">
-                  <label for="email" class="form-label">
-                    <input type="text" name="email" class="form-input" placeholder="Введите e-mail">
+                    <input type="text" name="name" class="form-input" required placeholder="Ваше имя">
                   </label>
                 </div>
                 <div class="input-wrap required">
@@ -1869,13 +1690,22 @@
                     <input type="text" name="phone" class="form-input" phoneMask_JS required placeholder="Номер телефона">
                   </label>
                 </div>
-                <button class="form-btn btn btn-reverse">
-                  <span>Оставить заявку</span>
+                <button class="form-btn animated btn" agreementControlBtn_JS>
+                  <span>Вызвать замерщика</span>
                 </button>
+                <div class="zamer-popup__form-checkbox popup-form__checkbox form-checkbox">
+                  <div agreementControl_JS class="checked">
+                      <label for="agreement"></label>
+                      <input type="checkbox" name="agreement" agreementControlCheckbox_JS checked>
+                  </div>
+                  <p>
+                    Нажимая на кнопку «Вызвать замерщика» вы принимаете условия <a href="" class="agreement-link" target="_blank">Публичной оферты</a>.
+                  </p>
+                </div>
               </div>
             </form>
           </div>
-          <div class="order-popup__close popup__close" popupClose_JS>
+          <div class="zamer-popup__close popup__close" popupClose_JS>
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" fill="#1C1718"/>
             </svg>
@@ -1890,21 +1720,18 @@
     <div class="popup__container">
       <div class="popup__block thanks-popup__block">
         <div class="thanks-popup__content popup__content">
-          <div class="thanks-popup__img-wrap">
-            <img src="img/order-girl.webp" alt="" class="thanks-popup__img">
+          <div class="thanks-popup__img-wrap popup__img-wrap">
+            <img src="img/popup-img.webp" alt="" class="thanks-popup__img popup__img">
           </div>
           <div class="thanks-popup__main popup__main">
-            <div class="popup__logo-wrap thanks-popup__logo-wrap">
-              <img src="img/icons/popup-logo.svg" alt="" class="popup__logo">
-            </div>
-            <div class="thanks-popup__title">
+            <div class="thanks-popup__title popup__form-title">
               СПАСИБО ЗА ЗАКАЗ!
             </div>
-            <div class="thanks-popup__text">
-              Наши специалисты свяжутся с Вами в&nbsp;ближайшее время
+            <div class="thanks-popup__text popup__form-text">
+              Наши специалисты свяжутся с Вами в ближайшее время
             </div>
           </div>
-          <div class="order-popup__close popup__close" popupClose_JS>
+          <div class="zamer-popup__close popup__close" popupClose_JS>
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M24.5006 1.49996C24.1412 1.14064 23.6538 0.938782 23.1455 0.938782C22.6373 0.938782 22.1499 1.14064 21.7905 1.49996L13.0006 10.2898L4.21079 1.49996C3.85137 1.14064 3.36394 0.938782 2.85571 0.938782C2.34748 0.938782 1.86006 1.14064 1.50063 1.49996C1.14131 1.85938 0.939453 2.34681 0.939453 2.85504C0.939453 3.36327 1.14131 3.85069 1.50063 4.21012L10.2905 13L1.50063 21.7898C1.14131 22.1492 0.939453 22.6366 0.939453 23.1449C0.939453 23.6531 1.14131 24.1405 1.50063 24.5C1.86006 24.8593 2.34748 25.0611 2.85571 25.0611C3.36394 25.0611 3.85137 24.8593 4.21079 24.5L13.0006 15.7101L21.7905 24.5C22.1499 24.8593 22.6373 25.0611 23.1455 25.0611C23.6538 25.0611 24.1412 24.8593 24.5006 24.5C24.8599 24.1405 25.0618 23.6531 25.0618 23.1449C25.0618 22.6366 24.8599 22.1492 24.5006 21.7898L15.7108 13L24.5006 4.21012C24.8599 3.85069 25.0618 3.36327 25.0618 2.85504C25.0618 2.34681 24.8599 1.85938 24.5006 1.49996Z" fill="#1C1718"/>
             </svg>
@@ -2024,8 +1851,6 @@
         let formData = new FormData(this);
         formData.append('url', document.location.href);
         let btn = $(this).find('.form-btn');
-        btn.find('span').text('Загрузка...');
-        btn.text('Загрузка...');
         $('.preloader').addClass('active');
         $.ajax({
           url: 'https://jsonplaceholder.typicode.com/posts',

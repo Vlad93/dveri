@@ -1366,7 +1366,6 @@ $(document).ready(function () {
               },
               phone: {
                 required: true,
-                pattern: /^(?!.*(\d)\1{3})[0-9()+-]+$/,
                 minlength: 7, // Метод проверки повторяющихся подряд символов
               },
               email: {
@@ -1663,7 +1662,23 @@ $(window).on('scroll', function() {
   $('.header-progress').width(ratio + "%");
 });
 
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+  if (scroll >=  $(document).height() / 3) {
+      $('[toTop_JS]').addClass('visible');
+  } else {
+      $('[toTop_JS]').removeClass('visible');
+  };
 
+  $('[onScrollDisplay_JS]').each(function () {
+      var el = $(this);
+
+      if (come(el)) {
+          el.addClass('visible');
+      };
+  });
+
+});
 
 $('img').each( function(e) {
   $(this).addClass('lazy');

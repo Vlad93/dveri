@@ -1,42 +1,42 @@
 
 .form-container {
-  margin-bottom: resp-size(27);
+  margin-bottom: resp(27);
   display: flex;
   align-items: flex-end;
-  gap: resp-size(20);
-  column-gap: resp-size(37);
+  gap: resp(20);
+  column-gap: resp(37);
   flex-wrap: wrap;
   @include _767 {
-    gap: resp-size(11, 360);
+    gap: resp(11, 360);
   }
 }
 .form-textarea {
   resize: none;
-  min-height: resp-size(138);
+  min-height: resp(138);
   @include _767 {
-    min-height: resp-size(96, 360);
+    min-height: resp(96, 360);
   }
 }
 .standart-form__before-submit-hint {
-  margin-bottom: resp-size(12);
+  margin-bottom: resp(12);
   font-weight: 500;
-  font-size: resp-size(14);
+  font-size: resp(14);
   & a {
     text-decoration: underline;
     text-underline-offset: 2px;
   }
   @include _767 {
-    margin-bottom: resp-size(19, 360);
-    font-size: resp-size(12, 360);
+    margin-bottom: resp(19, 360);
+    font-size: resp(12, 360);
   }
 }
 .form-input {
   display: block;
   width: 100%;
   position: relative;
-  padding: resp-size(13) resp-size(26);
+  padding: resp(13) resp(26);
   font-weight: 500;
-  font-size: resp-size(20);
+  font-size: resp(20);
   font-weight: 300;
   border: 1px solid #000;
   color: $primary;
@@ -44,8 +44,8 @@
     color: $primary;
   }
   @include _767 {
-    padding: resp-size(10, 360) resp-size(14, 360);
-    font-size: resp-size(16, 360);
+    padding: resp(10, 360) resp(14, 360);
+    font-size: resp(16, 360);
   }
 }
 
@@ -69,7 +69,7 @@
 // }
 
 .form-btn {
-  max-width: resp-size(369);
+  max-width: resp(369);
   width: 100%;
   transition: opacity .3s ease, transform .3s ease, box-shadow .3s ease;
   @include _767 {
@@ -113,7 +113,7 @@
     width: 100%;
   }
   &_half {
-    flex-basis: calc(50% - resp-size(19));
+    flex-basis: calc(50% - resp(19));
     @include _767 {
       flex-basis: 100%;
     }
@@ -127,12 +127,16 @@
   font-weight: 400;
   font-size: resp(16);
   line-height: 1.3em;
+  @include _767 {
+    padding-left: resp(29, 360);
+    font-size: resp(12, 360);
+  }
 }
 .form-checkbox div[agreementControl_JS] {
   cursor: pointer;
   position: absolute;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   left: 0;
   top: 0;
   width: 100%;
@@ -146,6 +150,12 @@
   border-radius: resp(2);
   border: 1px solid $primary;
   background-color: transparent;
+  @include _767 {
+    width: resp(19, 360);
+    height: resp(19, 360);
+    border-radius: resp(2, 360);
+    border: 1px solid $primary;
+  }
 }
 
 .form-checkbox div[agreementControl_JS] label:after {
@@ -181,11 +191,14 @@
   text-underline-offset: resp(4);
   z-index: 1;
   color: #000;
-  transition: color .3s ease;
+  transition: opacity .2s ease;
   @include interactive {
     &:hover {
-      color: $primary;
+      opacity: .8;
     }
+  }
+  @include _767 {
+    text-underline-offset: resp(4, 360);
   }
 }
 
@@ -204,7 +217,7 @@
 }
 @media screen and (max-width: 767px) {
   .iti__selected-dial-code {
-    font-size: calc((16 / 360)* 100vw);
+    font-size: calc((14 / 360)* 100vw);
   }
 }
 .iti {

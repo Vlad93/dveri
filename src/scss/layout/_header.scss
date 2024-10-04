@@ -426,23 +426,40 @@
       }
     }
     &-btn-close {
-      margin-bottom: resp(12);
+      width: 30px;
+      height: 30px;
       display: flex;
       align-items: center;
-      gap: resp(15);
+      justify-content: center;
       border: none;
       outline: none;
-      color: #fff;
-      font-weight: 600;
-      font-size: resp(24);
-      line-height: 1.3em;
       transition: color .2s ease;
       &-icon {
+        width: 60%;
+        height: 60%;
         transition: transform .2s ease;
       }
       @include interactive {
         &:hover &-icon {
           transform: rotate(90deg);
+        }
+      }
+    }
+    &-btn-wrap {
+      margin-bottom: resp(12);
+      display: flex;
+      align-items: center;
+      gap: resp(10);
+    }
+    &-btn-link {
+      color: #fff;
+      font-weight: 600;
+      font-size: resp(24);
+      line-height: 1.3em;
+      transition: color .2s ease;
+      @include interactive {
+        &:hover {
+          color: #537BD5;
         }
       }
     }

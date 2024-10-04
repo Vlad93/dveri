@@ -36,21 +36,35 @@
     }
   }
   &.to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     bottom: 20px;
-    right: 10px;
+    right: 15px;
     z-index: 5;
     padding: 0;
-    width: 50px;
-    height: 50px;
+    width: resp(50);
+    height: resp(50);
     opacity: 0;
     visibility: hidden;
     border-radius: 50%;
-    transform: rotate(180deg);
-    background: url('../img/caretDown.svg') no-repeat center / auto, linear-gradient(132deg, rgba(2, 5, 40, 0.38) -48.79%, #F85E61 57.89%), #EE1A24;
-    transition: opacity .3s ease, visibility .3s ease;
+    background: $primary;
+    transition: opacity .3s ease, visibility .3s ease, box-shadow .3s ease;
+    @include interactive {
+      &:hover .to-top__icon {
+        transform: rotate(180deg);
+      }
+    }
+    & .to-top__icon {
+      transform: rotate(180deg);
+      fill: #fff;
+    }
     @include _767 {
-      bottom: 30px;
+      right: resp(10, 360);
+      bottom: resp(10, 360);
+      width: resp(30, 360);
+      height: resp(30, 360);
     }
     &.visible {
       opacity: 1;

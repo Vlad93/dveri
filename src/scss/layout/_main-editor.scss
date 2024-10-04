@@ -1,0 +1,54 @@
+.section-main {
+  &__wrap {
+    margin-bottom: resp(50);
+    display: flex;
+    align-items: flex-start;
+    gap: resp(55);
+    font-size: resp(24);
+    line-height: 1.21em;
+    letter-spacing: 0.05em;
+    @include _767 {
+      margin-bottom: resp(15, 360);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: resp(15, 360);
+      font-size: resp(14, 360);
+    }
+  }
+  &__img-wrap {
+    min-width: 54%;
+    width: 54%;
+    @include _767 {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
+.editor {
+  font-size: resp(24);
+  line-height: 1.21em;
+  letter-spacing: 0.05em;
+  @include _767 {
+    font-size: resp(14, 360);
+  }
+  & p, & ul, & ol {
+    margin-bottom: resp(30);
+    @include _767 {
+      margin-bottom: resp(15, 360);
+    }
+  }
+  & ul, & ol {
+    padding-left: 25px;
+    list-style: disc;
+  }
+  & h2, & h3, & h4, & h5, & h6 {
+    margin-bottom: resp(30);
+    @include _767 {
+      margin-bottom: resp(15, 360);
+    }
+  }
+}

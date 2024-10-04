@@ -33,7 +33,7 @@
 // @import "components/article-card";
 // @import "components/soc-media";
 // @import "components/toggle-item-js";
-// @import "components/video-wiget";
+@import "components/breadcrumps";
 @import "components/popups/popup";
 @import "components/popups/product-popup";
 // @import "components/popups/after-sixty";
@@ -52,6 +52,7 @@
 @import "layout/partners";
 @import "layout/zamer";
 @import "layout/map";
+@import "layout/main-editor";
 
 @import "pages/home/hero";
 @import "pages/home/catalog-links";
@@ -80,9 +81,7 @@
 // @import "pages/home/about";
 
 
-@import "pages/about/about-top";
-@import "pages/about/caroosel";
-@import "pages/about/seo-about";
+@import "pages/about/about";
 
 @import "pages/catalog/catalog";
 
